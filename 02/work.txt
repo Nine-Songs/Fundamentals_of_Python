@@ -1,0 +1,2 @@
+help( type name )可以查看python内建集合类型str，list，tuple等的详细功能
+dir( type name ) 可以查看内建集合类型的所有方法
