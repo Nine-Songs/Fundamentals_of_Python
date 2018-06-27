@@ -9,7 +9,7 @@ def binarySearch(target,lyst):
 		if lyst[midpoint] == target:
 			return midpoint
 		elif lyst[midpoint] < target:
-			right = midpoint - 1
-		elif lyst[midpoint] > target:
 			left = midpoint + 1
+		elif lyst[midpoint] > target:
+			right = midpoint - 1
 	return -1
