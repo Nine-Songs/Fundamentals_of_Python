@@ -23,8 +23,7 @@ import random
 
 class Profiler(object):
 	
-	def test(self, function, lyst = None, size = 10, unique = True, comp = True, 
-	exch = True, trace = False):
+	def test(self, function, lyst = None, size = 10, unique = True, comp = True, exch = True, trace = False):
 		'''
 		Function: the algorithm being profiled
 		target: the search target if profiling a search
@@ -44,7 +43,7 @@ class Profiler(object):
 		if lyst != None:
 			self._lyst = lyst
 		elif unique:
-			self._lyst = range(1, size + 1)
+			self._lyst = list(range(1, size + 1))
 			random.shuffle(self._lyst)
 		else:
 			self._lyst = []
@@ -91,7 +90,7 @@ class Profiler(object):
 		Returns the results as a string.
 		'''
 		result = "Problem size: "
-		result += str(len(str._lyst)) + "\n"
+		result += str(len(self._lyst)) + "\n"
 		result += "Elapsed time: "
 		result += str(self._elapsedTime) + "\n"
 		if self._comp:
