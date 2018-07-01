@@ -1,0 +1,6 @@
+程序员使用两个模块：
+Profiler：该模块定义了Profiler类。
+Algorithms：该模块定义了用来进行探查的排序函数。
+
+排序函数和之前文件夹里的函数具有相同的设计，只不过它们接受Profiler对象作为额外的参数。Profiler方法comparison和exchange，分别是循环计数和交换计数。
+实际上任何对列表的处理算法都可以添加到Profiler模块中来。
